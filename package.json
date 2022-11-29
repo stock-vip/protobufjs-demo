@@ -1,0 +1,19 @@
+{
+  "name": "protobuf-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pbjs":"pbjs -t static-module -o ./proto/awesome.js awesome.proto",
+    "pbts":"pbts -o ./proto/awesome.d.ts ./proto/awesome.js",
+    "protoc":"npm run pbjs && npm run pbts"
+  },
+  "keywords": [],
+  "author": "Regan",
+  "license": "ISC",
+  "dependencies": {
+    "protobufjs": "^7.1.2",
+    "protobufjs-cli": "^1.0.2"
+  }
+}
